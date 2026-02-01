@@ -1,6 +1,6 @@
 from fastapi import APIRouter, Request, Response
 import httpx
-from app.config import AUTH_SERVICE_URL, CONTENT_SERVICE_URL
+from app.config import AUTH_SERVICE_URL, CONTENT_SERVICE_URL, SEARCH_SERVICE_URL, MEDIA_SERVICE_URL
 
 router = APIRouter()
 
@@ -8,6 +8,8 @@ router = APIRouter()
 SERVICE_MAP = {
     "/auth": AUTH_SERVICE_URL,
     "/notes": CONTENT_SERVICE_URL,
+    "/search": SEARCH_SERVICE_URL,
+    "/media": MEDIA_SERVICE_URL,
 }
 
 # Forward the requests to the corresponding service that needs to handle it
