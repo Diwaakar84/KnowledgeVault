@@ -5,6 +5,7 @@ import LoginScreen from "../auth/LoginScreen";
 import RegisterScreen from "../auth/RegisterScreen";
 import NoteEditor from "../notes/NoteEditor";
 import { useAuth } from "../store/AuthContext";
+import { NavigationDarkTheme } from "../utils/navigationTheme";
 
 const Stack = createNativeStackNavigator();
 
@@ -16,7 +17,7 @@ export default function AppNavigator() {
   }
 
   return (
-    <NavigationContainer>
+    <NavigationContainer theme={NavigationDarkTheme}>
       <Stack.Navigator>
         {isLoggedIn ? (
           <>

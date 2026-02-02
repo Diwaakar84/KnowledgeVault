@@ -1,8 +1,7 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import {
   View,
   Text,
-  TextInput,
   TouchableOpacity,
   StyleSheet,
   Alert,
@@ -11,6 +10,7 @@ import {
 import { api } from "../api/client";
 import KVInput from "../components/KVInput";
 import KVButton from "../components/KVButton";
+import { DarkTheme } from "../utils/theme";
 
 export default function RegisterScreen({ navigation }: any) {
   const [email, setEmail] = useState("");
@@ -81,13 +81,14 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     padding: 24,
-    backgroundColor: "#fff",
+    backgroundColor: DarkTheme.background,
   },
   title: {
     fontSize: 26,
     fontWeight: "bold",
     marginBottom: 32,
     textAlign: "center",
+    color: DarkTheme.textPrimary,
   },
   input: {
     borderWidth: 1,
@@ -109,6 +110,7 @@ const styles = StyleSheet.create({
   },
   link: {
     textAlign: "center",
-    color: "#4f46e5",
+    color: DarkTheme.primary,
+    marginTop: 16,
   },
 });

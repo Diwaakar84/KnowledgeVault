@@ -8,7 +8,6 @@ import {
 } from "react-native";
 
 import { api } from "../api/client";
-import { saveToken } from "../store/authStorage";
 import { DarkTheme } from "../utils/theme";
 import KVInput from "../components/KVInput";
 import KVButton from "../components/KVButton";

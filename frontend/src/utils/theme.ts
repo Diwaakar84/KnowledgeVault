@@ -13,3 +13,21 @@ export const DarkTheme = {
   inputBg: "#020617",
   placeholder: "#64748b",
 };
+
+export const LightTheme = {
+  background: "#f8fafc",
+  surface: "#ffffff",
+  card: "#ffffff",
+
+  primary: "#4f46e5",
+  secondary: "#16a34a",
+  danger: "#dc2626",
+
+  textPrimary: "#020617",
+  textSecondary: "#475569",
+
+  border: "#e2e8f0",
+
+  inputBg: "#ffffff",
+  placeholder: "#94a3b8",
+};
